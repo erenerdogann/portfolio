@@ -1,0 +1,139 @@
+html {
+	scroll-behavior: smooth;
+}
+
+h1{
+    font-family: "Ubuntu", sans-serif;
+}
+
+a{
+  color: #24272b;
+}
+a:hover{
+  text-decoration: none;
+  color: #24272b;
+}
+
+/* NavBar */
+nav .navbar-nav li a {
+  color: #f56e01 !important;
+  font-family: "Open Sans", sans-serif !important;
+}
+nav .navbar-nav li a:hover {
+  color: whitesmoke !important;
+  background-color: rgba(255, 129, 25, 0.15);
+  font-family: "Open Sans", sans-serif !important;
+  border-radius: 15%;
+}
+.navButtons {
+  margin-left: auto;
+}
+.navBrand {
+  color: #f56e01 !important;
+  font-family: "Ubuntu", sans-serif;
+}
+.navLogo {
+  font-family: "Monoton", cursive;
+  background-color: #24272b;
+  padding: 1% 5%;
+}
+
+/* Intro */
+
+.introDiv {
+  background-image: url("/img/siteBG.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 18% 5%;
+}
+.introCard{
+    background-color: rgba(41, 42, 46, 0.85);
+    color: #FF8119;
+    font-family: "Ubuntu", sans-serif;
+    padding: 5% 2%;
+    letter-spacing: 1.75px;
+}
+.introText{
+    color: whitesmoke;
+    font-family: "Open Sans", sans-serif !important;
+}
+
+.buttonDiv{
+    margin: auto;
+}
+.introButtons{
+    background-color: #FF8119;
+    box-shadow: 2px 2px 10px #24272b;
+    font-family: "Ubuntu", sans-serif; 
+}
+.introButtons:hover{
+    background-color: #A84C00;
+}
+
+/* Skills */
+.skillsDiv{
+    margin: 2%;
+    
+    display: flex;
+    align-items: stretch;
+}
+.card{
+    margin: 5% 0;
+}
+.skillsHeader{
+    color: #0090A8;
+    font-family: "Ubuntu", sans-serif;
+}
+.skillsSubHead{
+    color: #00D1F5;
+    font-family: "Open Sans", sans-serif;
+    
+}
+.skills{
+    color: #FF8119;
+    margin: auto;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Projects */
+.projectsDiv{
+  background-color: #24272b;
+  padding: 5%;
+}
+.projectsHeader{
+  color: #FF8119;
+}
+.projectsSubHead{
+  color: #A84C00;
+}
+.card-text{
+  font-family: "Open Sans", sans-serif !important;
+  padding-bottom: 3%;
+}
+.card-title{
+  font-family: "Ubuntu", sans-serif;
+}
+
+.contactHead{
+  font-family: "Ubuntu", sans-serif;
+}
+.contactBody{
+  font-family: "Open Sans", sans-serif !important;
+}
+.footerDiv{
+  background-color: #24272b;
+  color: whitesmoke;
+  text-align: center;
+}
+@media only screen and (max-width: 990px) {
+  /* NavBar */
+  nav .navbar-nav li a {
+    color: whitesmoke !important;
+    font-family: "Open Sans", sans-serif !important;
+  }
+  .buttonDiv{
+    margin: 5% auto;
+}
+}
