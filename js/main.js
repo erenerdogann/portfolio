@@ -243,7 +243,7 @@ function skills() {
 const projectsContent = document.getElementById("projects-content");
 function projects() {
     outputArea.innerHTML += "</br>" + "... opening projects ..." + "</br>" +
-        "You can open a project directly from the terminal if you type 'open' +' *project name* '"
+        "You can open a project directly from the terminal if you type 'goto' +' *project name* '"
         + "</br>";
     const contactBox = new WinBox({
         title: "myProjects.exe",
