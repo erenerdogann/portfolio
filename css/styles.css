@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+*:focus{
+    outline: none;
+}
+
+a{
+    color: #10121c;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'IBM Plex Mono', monospace ;
+    background-color: #10121c;
+    color: #c9c9c9;
+    font-size: large;
+    overflow: hidden;
+}
+
+.myBody{
+    font-family: 'IBM Plex Mono', monospace ;
+    background-color: #10121c;
+    color: #c9c9c9;
+    font-size: large;
+    letter-spacing: -1px;
+    margin: 0% 10%;
+    padding-top: 10%;
+    overflow: hidden;
+}
+h3{
+    font-family: 'IBM Plex Mono', monospace ;
+}
+
+form{
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+}
+
+label{
+    display: inline-block;
+    width: 30px;
+}
+
+.hidden{
+    display: none;
+}
+
+.mainContainer{
+    border: #c9c9c9 1px solid;
+    overflow: hidden;
+    height: 60vh;
+    font-size: large;
+}
+
+.header{
+    width: 100%;
+    background-color: #c97200;
+    font-family: 'IBM Plex Mono', monospace;
+    color: #10121c;
+    padding: 0.5%;
+}
+
+.wb-title{
+    font-family: 'IBM Plex Mono', monospace;
+    color: #10121c;
+}
+
+.wb-body{
+    padding: 2%;
+    color: #c9c9c9;
+    background-color: #1b1e2e;
+}
+
+.sHeader h1{
+    color: #c97200;
+}
+.sBody h2{
+    color: #c97200;
+}
+.sSkillsRow{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-bottom: 1%;
+}
+.pProjectsRow{
+    align-items: center;
+    margin-bottom: 1%;
+}
+.pItem{
+    
+    text-align: center;
+    margin: auto;
+    padding: 2%;
+}
+.pButton{
+    padding: 2%;
+    background-color: #c97200;
+    color: #10121c;
+    font-size: large;
+}
+.pButton:hover{
+    padding: 2.5%;
+    background-color: #c9c9c9;
+    color: #10121c;
+    font-size: large;
+}
+.sItem{
+    text-align: center;
+    margin: auto;
+    padding: 2%;
+    border: 1px solid #c9c9c9;
+}
+
+#closeX{
+    float: right;
+    margin-right: 0.5%;
+}
+
+#outputArea{
+    padding: 2%;
+    text-decoration: none;
+    color: #c9c9c9;
+}
+#outputArea a{
+    text-decoration: none;
+    color: #c9c9c9;
+}
+
+#inputArea{
+    width: 100%;
+    padding-left: 2%;
+    font-size: large;
+}
+#inputBox{
+    border: none;
+    background-color: #10121c;
+    color: #c9c9c9;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size:large;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        font-size: small;
+    }
+    .mainContainer{
+        font-size: small;
+    }
+    #inputArea{
+        font-size: small;
+    }
+    #inputBox{
+        font-size: small;
+    }
+}

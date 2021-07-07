@@ -1,629 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EREN ERDOGAN</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/styles.css" />
-    <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand navBrand" href="index.html"
-        ><span class="navLogo">E</span> EREN ERDOGAN</a
-      >
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav navButtons">
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">SKILLS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">PROJECTS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">CONTACT</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link disabled" href="/blog.html">BLOG</a>
-          </li>-->
-        </ul>
-      </div>
-    </nav>
 
-    <div class="container-fluid">
-      <!-- Intro -->
-      <div class="row introDiv">
-        <div class="introCard col-lg-8 col-xl-6">
-          <h1>Hi! I am Eren Web/Mobile Developer!</h1>
-          <div class="introText">
-            <p>
-              Pleased to meet you! <br />
-              Look around on my website so you can see my skillset and my
-              projects. <br />
-              I have couple of demos and small applications here! <br />
-              If you have and question or anything to consult fell free to
-              contact me!
-            </p>
-          </div>
-        </div>
-        <div class="buttonDiv col-lg-4 col-xl-6">
-          <button type="button" class="btn introButtons btn-lg btn-block">
-            <a href="#projects">Check My Projects</a>
-          </button>
-          <button
-            type="button"
-            class="btn introButtons btn-lg btn-block"
-            data-toggle="tooltip"
-            data-placement="bottom"
-            title="For an easy project or quick bugfix! For
-          bigger projects please contact me!"
-          >
-            <a href="https://www.fiverr.com/erenerdogann" target="_blank">
-              Quick Hire From Fiverr
-            </a>
-          </button>
-        </div>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>\_[*-*]_/</title>
+</head>
 
-      <!-- Skills -->
-      <div class="row skillsDiv" id="skills">
-        <div class="col-xl-12 skillsHeader">
-          <h1>What Can I Do?</h1>
-          <p id="skillIntro" class="skillsSubHead">
-            Hey! You can see my skillset here
-          </p>
-          <hr class="rounded" />
+<body onclick="fFocus();">
+    <div class="myBody">
+        <div class="header">
+            <h3>erenerdogan.me <span id="closeX"><a href="javascript: exit()">X</a></span></h3>
         </div>
-        <div class="col-xl-12 skillsHeader">
-          <h5>Front-End</h5>
-          <p class="skillsSubHead">
-            Simple yet very effective, with these skills I can creat great
-            looking pages in no time!
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card skills h-100">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6 col-xs-6"><h2>HTML</h2></div>
-                <div class="col-sm-6 col-xs-6">
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i><br /><i
-                    class="fas fa-star"
-                  ></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-              </div>
+        <div class="mainContainer">
+            <div id="outputArea">
+                Default Text
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card skills h-100">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6 col-xs-6"><h2>CSS</h2></div>
-                <div class="col-sm-6 col-xs-6">
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i><br /><i
-                    class="fas fa-star"
-                  ></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-              </div>
+            <div id="inputArea">
+                <form action="javascript:getInput()" autocomplete="off">
+                    <label for="terminalInputBox">></label>
+                    <input type="text" id="inputBox" name="terminalInputBox" placeholder="Enter your command here!">
+                </form>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card skills h-100">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6 col-xs-6"><h2>Bootstrap</h2></div>
-                <div class="col-sm-6 col-xs-6">
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i><br /><i
-                    class="fas fa-star"
-                  ></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card skills h-100">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6 col-xs-6"><h2>JavaScript</h2></div>
-                <div class="col-sm-6 col-xs-6">
-                  <i class="fas fa-star"></i><i class="far fa-star"></i><br /><i
-                    class="fas fa-star"
-                  ></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card skills h-100">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6 col-xs-6"><h2>Material UI</h2></div>
-                <div class="col-sm-6 col-xs-6">
-                  <i class="fas fa-star"></i><i class="far fa-star"></i><br /><i
-                    class="fas fa-star"
-                  ></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card skills h-100">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6 col-xs-6"><h2>Figma</h2></div>
-                <div class="col-sm-6 col-xs-6">
-                  <i class="far fa-star"></i><i class="far fa-star"></i><br /><i
-                    class="fas fa-star"
-                  ></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
-        <div class="col-xl-12 skillsHeader">
-          <hr class="rounded" />
-          <h5>Back-End</h5>
-          <p class="skillsSubHead">
-            You can't make any complex or functional website without these!
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card skills h-100">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6 col-xs-6"><h2>Node JS</h2></div>
-                <div class="col-sm-6 col-xs-6">
-                  <i class="fas fa-star"></i><i class="far fa-star"></i><br /><i
-                    class="fas fa-star"
-                  ></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-              </div>
+        <div class="hidden">
+            <div id="contact-content">
+                <h1>Contact Test</h1>
+                <form>
+                    <label for="">Hello</label>
+                    <input type="text">
+                </form>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, maxime laborum aliquam et sunt nihil,
+                    reprehenderit officia magni perspiciatis magnam delectus aperiam iure distinctio assumenda totam
+                    asperiores ex possimus neque.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto harum maxime quae sequi repellat
+                    laborum
+                    soluta perspiciatis nam a mollitia molestias expedita dignissimos vitae esse, animi earum, in
+                    officia
+                    eveniet.</p>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card skills h-100">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6 col-xs-6"><h2>Express JS</h2></div>
-                <div class="col-sm-6 col-xs-6">
-                  <i class="fas fa-star"></i><i class="far fa-star"></i><br /><i
-                    class="fas fa-star"
-                  ></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card skills h-100">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6 col-xs-6"><h2>EJS</h2></div>
-                <div class="col-sm-6 col-xs-6">
-                  <i class="fas fa-star"></i><i class="far fa-star"></i><br /><i
-                    class="fas fa-star"
-                  ></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card skills h-100">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6 col-xs-6"><h2>SQL</h2></div>
-                <div class="col-sm-6 col-xs-6">
-                  <i class="far fa-star"></i><i class="far fa-star"></i><br /><i
-                    class="fas fa-star"
-                  ></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card skills h-100">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6 col-xs-6"><h2>Mongo DB</h2></div>
-                <div class="col-sm-6 col-xs-6">
-                  <i class="far fa-star"></i><i class="far fa-star"></i><br /><i
-                    class="fas fa-star"
-                  ></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card skills h-100">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6 col-xs-6"><h2>Mongoose</h2></div>
-                <div class="col-sm-6 col-xs-6">
-                  <i class="far fa-star"></i><i class="far fa-star"></i><br /><i
-                    class="fas fa-star"
-                  ></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-12 skillsHeader">
-          <hr class="rounded" />
-          <h5>App Development</h5>
-          <p class="skillsSubHead">
-            These are various programming languages that I have leaned over the
-            years, I can create web/mobile even desktop apps with these!
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card skills h-100">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6 col-xs-6"><h2>React</h2></div>
-                <div class="col-sm-6 col-xs-6">
-                  <i class="fas fa-star"></i><i class="far fa-star"></i><br /><i
-                    class="fas fa-star"
-                  ></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card skills h-100">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6 col-xs-6">
-                  <h2>Python</h2>
-                  <br />
-                  <p>(Currently Learning)</p>
-                </div>
-                <div class="col-sm-6 col-xs-6">
-                  <i class="far fa-star"></i><i class="far fa-star"></i><br /><i
-                    class="fas fa-star"
-                  ></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card skills h-100">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6 col-xs-6">
-                  <h2>Unity</h2>
-                  <br />
-                  <p>(Currently Learning)</p>
-                </div>
-                <div class="col-sm-6 col-xs-6">
-                  <i class="far fa-star"></i><i class="far fa-star"></i><br /><i
-                    class="fas fa-star"
-                  ></i
-                  ><i class="fas fa-star"></i><i class="far fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card skills h-100">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6 col-xs-6">
-                  <h2>Flutter</h2>
-                  <br />
-                  <p>(Currently Learning)</p>
-                </div>
-                <div class="col-sm-6 col-xs-6">
-                  <i class="far fa-star"></i><i class="far fa-star"></i><br /><i
-                    class="fas fa-star"
-                  ></i
-                  ><i class="far fa-star"></i><i class="far fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Projects -->
-      <div class="row projectsDiv" id="projects">
-        <div class="col-xl-12 projectsHeader">
-          <h1>Projects That I Did</h1>
-          <p class="projectsSubHead">
-            Look! Check my projects from here, every time I made new one I am
-            adding it here.
-          </p>
-          <hr class="rounded" style="background-color: #4a4848" />
-        </div>
-        <div class="col-md-12 col-lg-6 d-flex align-items-stretch">
-          <div class="card">
-            <div class="card-header">
-              <h3 class="skillsHeader">Pomodoro Timer</h3>
+            <div id="skills-content">
+                <div class="sHeader">
+                    <h1>What Can I Do?</h1>
+                    <hr>
+                    <p>Hey! You can see my skillset here, I am constantly learning new
+                        things and I make small websites and apps for 8 years!</p>
+                    <hr>
+                    <br>
+                </div>
+                <div class="sBody">
+                    <h2>Front-End</h2>
+                    <hr>
+                    <p>Simple yet very effective, with these
+                        skills I can creat great looking pages in no time!</p>
+                    <hr>
+                    <br>
+                    <div class="sSkillsRow">
+                        <div class="sItem">
+                            <h3>HTML</h3>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="sItem">
+                            <h3>CSS</h3>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="sItem">
+                            <h3>JavaScript</h3>
+                        <i class="fas fa-star"></i><i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="sSkillsRow">
+                        <div class="sItem">
+                            <h3>MaterialUI</h3>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <div class="sItem">
+                            <h3>Figma</h3>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <div class="sItem">
+                            <h3>BootStrap V3</h3>
+                        <i class="fas fa-star"></i><i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h2>Back-End</h2>
+                    <hr>
+                    <p>You can't make any complex or functional website without these!</p>
+                    <hr>
+                    <br>
+                    <div class="sSkillsRow">
+                        <div class="sItem">
+                            <h3>SQL</h3>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <div class="sItem">
+                            <h3>NodeJS</h3>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <div class="sItem">
+                            <h3>MongoDB</h3>
+                        <i class="fas fa-star"></i><i class="fas fa-star"><i class="fas fa-star"></i><i class="far fa-star"></i></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h2>Programming Languages</h2>
+                    <hr>
+                    <p>These are various programming languages that I have leaned over the years, I can create web/mobile even desktop apps with these!</p>
+                    <hr>
+                    <br>
+                    <div class="sSkillsRow">
+                        <div class="sItem">
+                            <h3>Python</h3>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <div class="sItem">
+                            <h3>Unity (C#)</h3>
+                        <i class="fas fa-star"></i><i class="fas fa-star"><i class="fas fa-star"></i><i class="far fa-star"></i></i><i class="far fa-star"></i>
+                        </div>
+                        <div class="sItem">
+                            <h3>C++</h3>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h2>Other</h2>
+                    <hr>
+                    <p>Besides programming, I also can do... </p>
+                    <hr>
+                    <br>
+                    <div class="sSkillsRow">
+                        <div class="sItem">
+                            <h3>3D Modelling</h3>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <div class="sItem">
+                            <h3>3D Printing</h3>
+                        <i class="fas fa-star"></i><i class="fas fa-star"><i class="fas fa-star"></i><i class="far fa-star"></i></i><i class="far fa-star"></i>
+                        </div>
+                        <div class="sItem">
+                            <h3>Photoshop</h3>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        </div>
+                        <div class="sSkillsRow">
+                        <div class="sItem">
+                            <h3>Arduino</h3>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
-            <div class="card-body">
-              <img
-                src="/img/PomodoroTimer.gif"
-                class="card-img-top"
-                alt="pomodoro"
-              />
-              <br /><br />
-              <h5 class="card-title">Simple Pomodoro Timer</h5>
-              <p class="card-text">
-                Web based pomodoro timer for the well known pomodoro study
-                method. Timer will notify you when the study session is over and
-                automatically proceed the break then study session again until
-                you complete 1 hour study, no pause no excuse, just productive
-                working!
-              </p>
-              <a
-                href="https://erenerdogann.github.io/PomodoroTimer/"
-                class="btn introButtons"
-                target="_blank"
-                >Visit Site!</a
-              >
-              <a
-                href="https://github.com/erenerdogann/PomodoroTimer"
-                class="btn introButtons"
-                target="_blank"
-                >Check Source Code!</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-12 col-lg-6 d-flex align-items-stretch">
-          <div class="card">
-            <div class="card-header">
-              <h3 class="skillsHeader">Simon Game</h3>
-            </div>
-            <div class="card-body">
-              <img src="/img/SimonSays.gif" class="card-img-top" alt="..." />
-              <br /><br />
-              <h5 class="card-title">The Simon Game</h5>
-              <p class="card-text">
-                Web based color matching game. Colors will pop on the screen
-                randomly with a distinct sound and you need to remember their
-                order. Every level is getting little bit harder so keep your
-                mind sharp. This game is genuenly fun to, it keeps the mind open
-                and make you have couple of great minutes!
-              </p>
-              <a
-                href="https://erenerdogann.github.io/SimonGame/"
-                class="btn introButtons"
-                target="_blank"
-                >Visit Site!</a
-              >
-              <a
-                href="https://github.com/erenerdogann/SimonGame"
-                class="btn introButtons"
-                target="_blank"
-                >Check Source Code!</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-12 col-lg-6 d-flex align-items-stretch">
-          <div class="card">
-            <div class="card-header">
-              <h3 class="skillsHeader">Drum Kit</h3>
-            </div>
-            <div class="card-body">
-              <img src="/img/DrumKit.gif" class="card-img-top" alt="..." />
-              <br /><br />
-              <h5 class="card-title">Basic Drum Kit</h5>
-              <p class="card-text">
-                Web based simple drum kit, noting fancy to produce music but it
-                sure was fun to build! Go ahead check it, it might sparkle the
-                musician in your soul!
-              </p>
-              <a
-                href="https://erenerdogann.github.io/BasicWebDrumKit/"
-                class="btn introButtons"
-                target="_blank"
-                >Visit Site!</a
-              >
-              <a
-                href="https://github.com/erenerdogann/BasicWebDrumKit"
-                class="btn introButtons"
-                target="_blank"
-                >Check Source Code!</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-12 col-lg-6 d-flex align-items-stretch">
-          <div class="card">
-            <div class="card-header">
-              <h3 class="skillsHeader">Pokedex</h3>
-            </div>
-            <div class="card-body">
-              <img src="/img/Pokedex.gif" class="card-img-top" alt="..." />
-              <br /><br />
-              <h5 class="card-title">React Pokedex</h5>
-              <p class="card-text">
-                My first ever React App! I just wanted to make something fun and
-                come up with this. It is using Pokedex API and it can search
-                through pokemons. <br />
-                (If "Visit Site" does not work, you can text the app throughout
-                source code page)
-              </p>
-              <a
-                href="https://he3x3.csb.app/"
-                class="btn introButtons"
-                target="_blank"
-                >Visit Site!</a
-              >
-              <a
-                href="https://codesandbox.io/s/he3x3"
-                class="btn introButtons"
-                target="_blank"
-                >Check Source Code!</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Contact -->
-      <div class="row skillsDiv" id="contact">
-        <div class="col-xl-12 skillsHeader">
-          <h1>Contact Me</h1>
-          <p class="skillsSubHead">
-            Here are my social media accounts and my mail address, even though I
-            am not active on social media I check my mails constantly!
-          </p>
-          <hr class="rounded" />
-        </div>
-        <div class="col-lg-6 d-flex align-items-stretch" style="width: 100%">
-          
-          <div class="card">
-            <div class="card-header">
-              <h3 class="contactHead">E-Mail</h3>
-            </div>
-            <div class="card-body">
-              <p>
-                If you need any help for your projects, if you need consultant, if
-                you need a programmer or if you have any question, anything to ask,
-                anything to say, mail me! I will be happy to answer any of questions
-                and if you want to hire me we can discuss the terms too!
-              </p>
-              <h3 class="contactBody">
-                <a href="mailto:imerenerdogan@gmail.com" class="card-text"
-                  >imerenerdogan@gmail.com</a
-                >
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 d-flex align-items-stretch" style="width: 100%">
-          <div class="card">
-            <div class="card-header">
-              <h3 class="contactHead">Other</h3>
-            </div>
-            <div class="card-body">
-              <p>
-                Here is all the other channels that you can reach out to me, I
-                do not use my social media actively but if you want to send any
-                message throughout there I can gladly answer them. You can also
-                check my work-related accounts!
-              </p>
-              <a
-                href="https://stackoverflow.com/users/8119488/eren"
-                target="_blank"
-                ><i
-                  class="fab fa-stack-overflow"
-                  style="font-size: 3rem; margin: 5%"
-                ></i
-              ></a>
-              <a href="https://github.com/erenerdogann" target="_blank"
-                ><i
-                  class="fab fa-github"
-                  style="font-size: 3rem; margin: 5%"
-                ></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/eren-erdoğan-99334a178/"
-                target="_blank"
-                ><i
-                  class="fab fa-linkedin-in"
-                  style="font-size: 3rem; margin: 5%"
-                ></i
-              ></a>
-              <a href="https://twitter.com/eren_erdogan_98" target="_blank"
-                ><i
-                  class="fab fa-twitter"
-                  style="font-size: 3rem; margin: 5%"
-                ></i
-              ></a>
-              <a href="https://www.facebook.com/imerenerdogan" target="_blank"
-                ><i
-                  class="fab fa-facebook-f"
-                  style="font-size: 3rem; margin: 5%"
-                ></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
+            <div id="projects-content">
+                <div class="sHeader">
+                    <h1>Projects That I Made</h1>
+                    <hr>
+                    <p>Check my projects out from here. I am actively creating and developing
+                        new projects.</p>
+                    <hr>
+                    <br>
+                </div>
+                <div class="pProjectsRow">
+                    <div class="pItem">
+                        <h3>Pomodoro Timer</h3>
+                        </br>
+                        <img src="/images/PomodoroTimer.gif" alt="pomodoro timer" style="max-width: 90%;">
+                        </br>
+                        </br>
+                        <p>Web based pomodoro timer for the well known pomodoro study method. Timer will 
+                            notify you when the study session is over and automatically proceed the break then 
+                            study session again until you complete 1 hour study, no pause no excuse, just 
+                            productive working!</p>
+                        </br>
+                        <a href="https://erenerdogann.github.io/PomodoroTimer/" target="blank"><button class="pButton">Visit Site</button></a>
+                        <a href="https://github.com/erenerdogann/PomodoroTimer" target="blank"><button class="pButton">Source Code</button></a>
+                    </div>                    
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div class="pProjectsRow">
+                    <div class="pItem">
+                        <h3>Simon Says Game</h3>
+                        </br>
+                        <img src="/images/SimonSays.gif" alt="Simon Says Game" style="max-width: 90%;">
+                        </br>
+                        </br>
+                        <p>Web based color matching game. Colors will pop on the screen randomly with a 
+                            distinct sound and you need to remember their order. 
+                            Every level is getting little bit harder so keep your mind sharp. 
+                            This game is genuenly fun. It keeps the mind open and make you have 
+                            couple of great minutes!</p>
+                        </br>
+                        <a href="https://erenerdogann.github.io/SimonGame/" target="blank"><button class="pButton">Visit Site</button></a>
+                        <a href="https://github.com/erenerdogann/SimonGame" target="blank"><button class="pButton">Source Code</button></a>
+                    </div>                    
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div class="pProjectsRow">
+                    <div class="pItem">
+                        <h3>Drum Kit</h3>
+                        </br>
+                        <img src="/images/DrumKit.gif" alt="Drum Kit" style="max-width: 90%;">
+                        </br>
+                        </br>
+                        <p>Web based simple drum kit, noting fancy to produce music but it sure is fun to play!
+                             It was fun to build for sure. Check it out!</p>
+                        </br>
+                        <a href="https://erenerdogann.github.io/BasicWebDrumKit/" target="blank"><button class="pButton">Visit Site</button></a>
+                        <a href="https://github.com/erenerdogann/BasicWebDrumKit" target="blank"><button class="pButton">Source Code</button></a>
+                    </div>                    
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div class="pProjectsRow">
+                    <div class="pItem">
+                        <h3>Pokedex</h3>
+                        </br>
+                        <img src="/images/Pokedex.gif" alt="Pokedex" style="max-width: 90%;">
+                        </br>
+                        </br>
+                        <p>First React App that I create! I just wanted to make something fun and come up with this. It is using Pokedex API, you can search through pokemons with 
+                            real time search in the app.
+                            (If "Visit Site" does not work, you can test the app throughout source code page)</p>
+                        </br>
+                        <a href="https://he3x3.csb.app" target="blank"><button class="pButton">Visit Site</button></a>
+                        <a href="https://codesandbox.io/s/he3x3" target="blank"><button class="pButton">Source Code</button></a>
+                    </div>                    
+                </div>
 
-      <!-- Footer -->
-      <div class="row footerDiv" id="footer">
-        <div class="col-xl-12">
-          <p id="footerText">Eren ERDOGAN</p>
+            </div>
+
         </div>
-      </div>
     </div>
 
-    <script src="/index.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/e2dc68bcca.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="js/winBox.bundle.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/e2dc68bcca.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
