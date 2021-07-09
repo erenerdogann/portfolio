@@ -17,6 +17,25 @@ function fFocus() {
     document.getElementById("inputBox").focus();
 }
 
+let commands = ["help", "projects", "pomodoro", "pokedex", "simon says",
+"drum kit", "skills", "about", "contact", "stack overflow", "github",
+"fiverr", "upwork", "clear", "goto", "source"];
+document.getElementById("inputBox").addEventListener("keydown", (e) =>{
+    if (e.keyCode === 9){
+        e.preventDefault();
+        inpt = document.getElementById("inputBox").value.toLowerCase();
+        inptArr = inpt.split(" ");
+        inpt = inptArr[inptArr.length - 1];
+        for(i = 0; i < commands.length; i++){
+            if(commands[i].substr(0, inpt.length) == inpt){
+               document.getElementById("inputBox").value += commands[i].substr(inpt.length, commands[i].length);
+               break;
+            }
+        }
+        focus();
+    }
+})
+
 function start() {
     outputArea.innerHTML = "> Hello dear, {$user}! Today is " +
         (DateNow.getDate()) + "/" + (DateNow.getMonth() + 1) + "/" + DateNow.getFullYear() +
