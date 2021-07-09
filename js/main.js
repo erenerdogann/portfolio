@@ -2,6 +2,7 @@ const DateNow = new Date;
 let outputArea = document.getElementById("outputArea");
 let w = "50%";
 let h = "65%";
+let lastEntered = "";
 if (window.screen.width < 750) {
     w = "100%";
     h = "65%";
@@ -32,6 +33,12 @@ document.getElementById("inputBox").addEventListener("keydown", (e) =>{
                break;
             }
         }
+        focus();
+    }
+})
+document.getElementById("inputBox").addEventListener("keydown", (e) =>{
+    if (e.keyCode == 38){
+        document.getElementById("inputBox").value = lastEntered;
         focus();
     }
 })
@@ -205,6 +212,7 @@ function getInput() {
             defCase();
             break;
     }
+    lastEntered = InputText.value;
     InputText.value = "";
     InputText.scrollIntoView();
 }
